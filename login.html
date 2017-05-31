@@ -4,26 +4,38 @@
 <title>Chat</title>
 </head>
   <style>
-    fieldset{
-  width: 260px;
+body{
+  margin: 0;
+  background-color: #00BCFF;
+  height: 600px;
 }
-#textfield{
-  width: 200px;
-  height: 50px;
+header, main{
+  display: flex;
+  height: 100px;
+}
+main{
+  padding-top: 100px;
+}
+h2, form, p{
+  margin: auto;
 }
 
+ footer{
+   padding-top: 25%;
+   display: flex;
+}
   </style>
 <body>
-    <form method="get" action="/login">
-      <fieldset>
-        <legend>Log in</legend>
+    <header>
+      <h2>Spacelore chat</h2>
+    </header>
+    <main>
+      <form method="get" action="/login">
         <label for="NameField">Enter your name</label>
-        <input id="NameField" type="text" name="username">
-        <input type="submit" value="Send">
-      </fieldset>
+        <input id="NameField" type="text" name="username" required>
+        <input type="submit" value="Send">    
     </form>
+    </main>
+    <footer><p>&copy Spacelore chat</p></footer>
 </body>
-  <script>
-
-  </script>
 </html>
