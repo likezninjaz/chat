@@ -2,21 +2,43 @@
 <html>
 <head>
 <meta charset="utf-8">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/styles.css">
 <title>Chat</title>
 </head>
-  <style>
-    fieldset{
-  width: 260px;
-}
-#textfield{
-  width: 200px;
-  height: 50px;
-}
-
-  </style>
 <body>
 <!-- Start your code here -->
+  <main>
+    <section class="profile">
+      <img src="images/profile_photo.jpg" class="profile-photo">
+      <h1 class="profile-name">Chris Marina</h1>
+      <h2 class="profile-info">Blogger</h2>
+      <div class="profile-about">
+        <div class="profile-about-city">
+          <img src="images/location.png">
+          <span>New-York</span>
+        </div>
+        <div class="profile-about-email">
+          <img src="images/email.png">
+          <span>chris@marina.com</span>
+        </div>
+        <div class="profile-about-birthday">
+          <img src="images/cake.png">
+          <span>23.04.1987</span>
+        </div>
+        <div class="profile-about-phone">
+          <img src="images/phone.png">
+          <span>+26559551559</span>
+        </div> 
+      </div>
 
+    </section>
+    <section class="chat">
+    </section>
+    <section class="contacts">
+    </section>
+  </main>
+<!--
   <form action=''>
     <fieldset>
       <legend>Chat</legend>
@@ -41,7 +63,7 @@
    </form>
  
   <ul id="messages"></ul>
-
+-->
 </body>
 <script src="/socket.io/socket.io.js"></script>
 <script>
