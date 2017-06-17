@@ -65,36 +65,8 @@
   <ul id="messages"></ul>
 -->
 </body>
-<script src="/socket.io/socket.io.js"></script>
+
 <script>
-  var socket = io();
-
-  function sendMessage(){
-    //Отправляю сообщение, и имя отправившего
-    socket.emit('chat message', document.getElementById('textfield').value, document.cookie.split('=')[1]);
-    document.getElementById('textfield').value = "";
-  }
-
-  socket.on('chat message', function(message){
-
-    console.log(message)
-
-    let messageLine = document.createElement("li");
-
-    let mess = document.createTextNode(message);
-
-    messageLine.appendChild(mess);
-
-    document.getElementById('messages').appendChild(messageLine);
-  });
-
-  socket.on('users online', function(usersOnline){
-
-    document.getElementById("count_users").value = usersOnline;
-  });
-
-  document.getElementById("username").value = document.cookie.split('=')[1];
-
 
 </script>
 </html>
