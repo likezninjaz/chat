@@ -119,10 +119,16 @@ main {
 	display: inherit;
 }
 
+.chat-conversation-input img {
+	width: 30px;
+	height: 30px;
+	margin: auto 0 auto 10px;
+}
+
 .chat-conversation-input-field {
 	margin: auto 10px;
 	border: none;
-	width: 80%;
+	width: 75%;
 }
 
 .contacts {
