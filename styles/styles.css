@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 main {
     max-width: 90%;
@@ -51,19 +52,27 @@ main {
 	background-color: #cfd8dc;
 	height: 500px;
 	border-left: 1px solid #90a4ae;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Roboto', sans-serif;
+
 }
 
 .chat-header {
 	height: 50px;
 	border-bottom: 1px solid #90a4ae;	
+	display: inherit;
 }
 
 .chat-header-name {
-	margin: 0;
+	margin: auto 10px;
+	font-size: 1.2em;
 }
 
 .chat-conversation {
 	padding: 0;
+	margin: 0;
+	height: 400px;
 }
 
 .chat-conversation-message {
@@ -75,7 +84,6 @@ main {
 
 .chat-conversation-message-text {
 	padding: 10px 10px 0 10px;
-	border-radius: 5px;
 }
 
 .outcoming {
@@ -89,17 +97,32 @@ main {
 .incoming .chat-conversation-message-text {
 	margin-left: 10px;
 	background-color: white;
+	color: #263238;
+	border-radius: 5px 5px 5px 25px;
 }
 
 .outcoming .chat-conversation-message-text {
 	margin-right: 10px;
 	background-color: #4caf50;
+	border-radius: 5px 5px 25px 5px;
 }
 
 .chat-conversation-message-photo {
 	border-radius: 50%;
 	width: 50px;
 	height: 50px;
+}
+
+.chat-conversation-input {
+	height: 50px;
+	background-color: white;
+	display: inherit;
+}
+
+.chat-conversation-input-field {
+	margin: auto 10px;
+	border: none;
+	width: 80%;
 }
 
 .contacts {
