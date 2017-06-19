@@ -16,7 +16,7 @@ class Chat implements MessageComponentInterface{
 
     public function onOpen(ConnectionInterface $conn){
 
-
+        echo "Connection sucessfull";
     }
 
     public function onMessage(ConnectionInterface $from, $msg){
