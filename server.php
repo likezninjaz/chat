@@ -12,5 +12,7 @@ $server = IoServer::factory(
 
 $server->run();
 
+print('Server started');
+
 
 ?>
