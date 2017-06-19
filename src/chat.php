@@ -13,6 +13,7 @@ class Chat implements MessageComponentInterface{
 
 
 
+
     public function onOpen(ConnectionInterface $conn){
 
 
