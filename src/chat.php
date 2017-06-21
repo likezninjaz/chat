@@ -6,6 +6,8 @@ use Ratchet\ConnectionInterface;
 use Ratchet\Http\HttpServer;
 use ratchet\WebSocket;
 
+use ChatApp\entities\message;
+
 
 class Chat implements MessageComponentInterface{
 
@@ -22,6 +24,8 @@ class Chat implements MessageComponentInterface{
 
         $this->clients->attach($conn);
         echo "New connection ({$conn->resourceId})\n";
+
+   
     }
 
     public function onMessage(ConnectionInterface $from, $msg){
@@ -33,6 +37,10 @@ class Chat implements MessageComponentInterface{
                 $client->send($msg);
             }
         } 
+
+        message::create([
+            'text' => $msg
+            ]);
     }
 
     public function onClose(ConnectionInterface $conn){
