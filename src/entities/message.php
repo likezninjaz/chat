@@ -8,6 +8,8 @@ namespace ChatApp\entities;
 	{
 		
 		protected $fillable = ['text'];
+
+		
 	}
 
 
