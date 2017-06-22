@@ -3,22 +3,22 @@
 
 main {
     max-width: 90%;
-    height: 500px;
+    height: 600px;
     display: flex;
-    margin: 50px auto;
+    margin: 20px auto;
     border: 1px solid #eceff1;
     border-radius: 10px;
+    border: 1px solid #90a4ae;
 }
 
 .profile {
 	width: 25%;
-	height: 500px;
 	display: inherit;
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Oswald', sans-serif;
-	border-right: 1px solid #eceff1;
 	background-color: #eceff1;
+	border-radius: 10px 0 0 10px;
 }
 
 .profile-photo {
@@ -50,12 +50,11 @@ main {
 .chat {
 	width: 50%;
 	background-color: #cfd8dc;
-	height: 500px;
 	border-left: 1px solid #90a4ae;
 	display: flex;
 	flex-direction: column;
 	font-family: 'Roboto', sans-serif;
-
+	overflow: hidden;
 }
 
 .chat-header {
@@ -72,7 +71,8 @@ main {
 .chat-conversation {
 	padding: 0;
 	margin: 0;
-	height: 400px;
+	height: 500px;
+	overflow-y: scroll;
 }
 
 .chat-conversation-message {
@@ -83,7 +83,7 @@ main {
 }
 
 .chat-conversation-message-text {
-	padding: 10px 10px 0 10px;
+	padding: 10px;
 }
 
 .outcoming {
@@ -133,7 +133,68 @@ main {
 
 .contacts {
 	width: 25%;
-	height: 500px;
 	background-color: #263238;
 	border-radius: 0 10px 10px 0;
+}
+
+.contacts-user {
+	border-bottom: 1px solid #90a4ae;
+	display: flex;
+}
+
+.contacts-user-photo {
+	margin: 10px 0 10px 20px;
+}
+
+.contacts-user-name {
+	margin: 10px 0 10px 20px;
+	color: white;
+	font-size: 1.4em;
+}
+
+.contacts-user-photo {
+	width: 100px;
+	height: 100px;
+	border-radius: 500%;
+}
+
+.contacts-list {
+	padding: 0;
+	margin: 0;
+}
+
+.contacts-list-profile {
+	list-style-type: none;
+	margin: 20px;
+	display: flex;
+	flex-direction: row;
+}
+
+.contacts-list-profile-photo{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+.contacts-list-profile-info {
+	display: inherit;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 10px;
+}
+
+.contacts-list-profile-info-name {
+	color: white;
+}
+
+.contacts-list-profile-info-lastmessage {
+	color: #546e7a;
+}
+
+.contacts-list-profile-unread {
+	align-self: center;
+	margin-left: 20px;
+	background-color: #4caf50;
+	border-radius: 30%;
+	border: 5px solid #4caf50;
 }
