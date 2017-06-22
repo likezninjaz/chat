@@ -12,8 +12,22 @@
                     <div class="col-md-push-2 col-md-8">
                         <h2>Php Chat<h2>
                             <h3>Message</h3>
-                            <ul class="message-list">
+                            <h3>Message for<span class="username label label-primary"></span></h3>
+                            <div class="row">
+                                <form class="username-setter" action="index_2.html" method="post">
+                                    <div class="form-group">
+                                    <label for="">Set username</label>
+                                    <input type="text" name="name" value="" class="form-control username-input">
+                                    </div>
+                                    <button class="btn btn-primary pull-right" type="submitbutton" name="button">Set</button>
+                                </form>
 
+                            </div>
+
+
+
+
+                            <ul class="message-list">
                             </ul>
 
                                 <form class="chat-form" actio="index.html" method="post">
