@@ -81,7 +81,14 @@
     <section class="contacts">
       <div class="contacts-user">
         <img src="images/profile_photo2.jpg" class="contacts-user-photo" />
-        <span class="contacts-user-name">Sam Fisher</span>
+        <div class="contacts-user-info">
+          <span class="contacts-user-info-name">Sam Fisher</span>
+          <div class="contacts-user-info-status">
+            <span class="contacts-user-info-status-icon"></span>
+            <span class="contacts-user-info-status-text">Busy</span>
+          </div>  
+        </div>
+        <img src="images/edit.png" class="contacts-user-edit" />
       </div>
       <ul class="contacts-list">
         <li class="contacts-list-profile">
@@ -109,32 +116,6 @@
       </ul>
     </section>
   </main>
-<!--
-  <form action=''>
-    <fieldset>
-      <legend>Chat</legend>
-      <label for="count_users">Users online</label>
-      <output id="count_users"></output>
-      <p></p>
-      
-      <label for="username">Username</label>
-      <output id="username"></output>
-     
-      <p></p>
-    
-      <input id="textfield"/>
-      
-      <input type="button" value="Send" onClick="sendMessage()"/>
-      
-    </fieldset>
-  </form>
-  
-  <form action='/changeName' method="get">
-   <input type="submit" value="Изменить имя" />
-   </form>
- 
-  <ul id="messages"></ul>
--->
 </body>
 
 <script>
