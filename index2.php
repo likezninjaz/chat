@@ -7,7 +7,6 @@
   <title>Chat</title>
 </head>
 <body>
-  <!-- Start your code here -->
   <main>
     <section class="profile">
       <img src="images/profile_photo.jpg" class="profile-photo">
@@ -45,30 +44,6 @@
         <li class="chat-conversation-message outcoming">
           <span class="chat-conversation-message-text">Hi! I'm okay, thanks.</span>
           <img src="images/profile_photo2.jpg" class="chat-conversation-message-photo" />
-        </li>
-        <li class="chat-conversation-message outcoming">
-          <span class="chat-conversation-message-text">Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.</span>
-          <img src="images/profile_photo2.jpg" class="chat-conversation-message-photo" />
-        </li>
-        <li class="chat-conversation-message outcoming">
-          <span class="chat-conversation-message-text">Hi! I'm okay, thanks.</span>
-          <img src="images/profile_photo2.jpg" class="chat-conversation-message-photo" />
-        </li>
-        <li class="chat-conversation-message incoming">
-          <img src="images/profile_photo.jpg" class="chat-conversation-message-photo" />
-          <span class="chat-conversation-message-text">Hello! How are you?</span>
-        </li>
-        <li class="chat-conversation-message outcoming">
-          <span class="chat-conversation-message-text">Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.Hi! I'm okay, thanks.</span>
-          <img src="images/profile_photo2.jpg" class="chat-conversation-message-photo" />
-        </li>
-        <li class="chat-conversation-message incoming">
-          <img src="images/profile_photo.jpg" class="chat-conversation-message-photo" />
-          <span class="chat-conversation-message-text">Hello! How are you?</span>
-        </li>
-        <li class="chat-conversation-message incoming">
-          <img src="images/profile_photo.jpg" class="chat-conversation-message-photo" />
-          <span class="chat-conversation-message-text">Hello! How are you?</span>
         </li>
       </ul>
       <div class="chat-conversation-input">
@@ -118,7 +93,7 @@
   </main>
 </body>
 
-<script>
-
-</script>
+<script src='js/jquery.js'></script>
+<script src='js/jquery.cookie.js'></script>
+<script src='js/main.js'></script>
 </html>
