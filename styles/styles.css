@@ -75,6 +75,7 @@ main {
 	margin: 0;
 	height: 500px;
 	overflow-y: scroll;
+	margin-right: -12px;
 }
 
 .chat-conversation-message {
@@ -86,6 +87,7 @@ main {
 
 .chat-conversation-message-text {
 	padding: 10px;
+	word-wrap: break-word;
 }
 
 .outcoming {
