@@ -1,5 +1,5 @@
 $(document).ready(function() {
-            var conn = new WebSocket('ws://localhost:8001');
+            var conn = new WebSocket('ws://176.114.3.10:8001');
             var chatForm = $(".chat-conversation"),
         	messageInputField=chatForm.find('#message'),
         	messagesList=$(".chat-conversation"),
