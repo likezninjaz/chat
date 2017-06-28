@@ -1,5 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face {
+    font-family: Oswald;
+    src: url(fonts/Oswald/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
 
 main {
     max-width: 90%;

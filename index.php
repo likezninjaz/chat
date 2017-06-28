@@ -7,8 +7,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>Chat</title>
 </head>
 <body>

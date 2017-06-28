@@ -1,0 +1,51 @@
+@font-face {
+    font-family: Oswald;
+    src: url(fonts/Oswald/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: green;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #cfd8dc;
+	background: -moz-linear-gradient(left, #cfd8dc 0%, #263238 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, #cfd8dc), color-stop(100%, #263238));
+	background: -webkit-linear-gradient(left, #cfd8dc 0%, #263238 100%);
+	background: -o-linear-gradient(left, #cfd8dc 0%, #263238 100%);
+	background: -ms-linear-gradient(left, #cfd8dc 0%, #263238 100%);
+	background: linear-gradient(to right, #cfd8dc 0%, #263238 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfd8dc', endColorstr='#263238', GradientType=1 );
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	margin-top: 150px;
+	color: white;
+}
+
+.login {
+	padding: 20px;
+	width: 300px;
+	border-radius: 5px;
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
+}
+
+input {
+	margin: 5px;
+	width: 270px;
+}
+
+button {
+	margin: 5px;
+	width: 288px;
+}
