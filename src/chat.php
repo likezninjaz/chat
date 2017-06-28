@@ -60,11 +60,6 @@ class Chat implements MessageComponentInterface{
                 # code...
                 break;
         }
-
-
-
-
-
     }
 
     public function onClose(ConnectionInterface $conn){

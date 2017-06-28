@@ -1,8 +1,8 @@
-         $(document).ready(function() {
-        var conn = new WebSocket('ws://176.114.3.10:8001');
-        var chatForm = $(".chat-form"),
+$(document).ready(function() {
+            var conn = new WebSocket('ws://localhost:8001');
+            var chatForm = $(".chat-conversation"),
         	messageInputField=chatForm.find('#message'),
-        	messagesList=$(".message-list"),
+        	messagesList=$(".chat-conversation"),
             usernameForm=$(".username-setter"),
             usernameInput=usernameForm.find('.username-input');
 
@@ -38,17 +38,20 @@
             url: 'load_history.php',
             dataType: 'json',
             success: function(data){
+
+                console.log('Load history');
                 $.each(data, function(){
 
+                   
                     if(this.sender == $.cookie('chat_name')){
-                        messagesList.prepend('<li class="label label-success">' + this.text + '</li>');
+                        messagesList.prepend('<li>' + this.text + '</li>');
                     }
                     messagesList.prepend('<li>' +this.text + '</li>');
                 })
             }
 
         })
-
+                 console.log('Load history');
                  var chatName= $.cookie('chat_name');
 
                  if(!chatName){
