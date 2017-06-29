@@ -32,20 +32,58 @@ h1 {
 	color: white;
 }
 
-.login {
-	padding: 20px;
-	width: 300px;
+.form {
+	width: 340px;
 	border-radius: 5px;
 	font-family: 'Roboto', sans-serif;
 	background-color: white;
 }
 
+.form__tabs {
+	display: flex;
+	flex-direction: row;
+	height: 50px;
+}
+
+.form__tabs-tab {
+	width: 170px;
+	display: inherit;
+	justify-content: center;
+	align-items: center;
+	color: #90a4ae;
+	cursor: pointer;
+}
+
+.form__tabs__auth {
+	background-color: #4caf50;
+	color: white;
+	border-radius: 5px 5px 0 0;
+}
+
+form {
+	margin: 20px;
+}
+
 input {
 	margin: 5px;
-	width: 270px;
+	width: 285px;
+	border: none;
+	height: 30px;
+	border-bottom: 1px solid #90a4ae;
 }
 
 button {
 	margin: 5px;
+	margin-top: 20px;
 	width: 288px;
+	background-color: #4caf50;
+	border: none;
+	height: 40px;
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.form__reg {
+	display: none;
 }

@@ -10,13 +10,29 @@
 
 <body>
 	<h1>Chat</h1>
-	<div class="login">
-	    <form method="post">
-		    <input type="text" name="login" placeholder="Username" required="required" />
-		    <input type="password" name="password" placeholder="Password" required="required" />
-		    <button type="submit" name ="submit" class="btn btn-primary btn-block btn-large">Login</button>
+	<div class="form">
+		<div class="form__tabs">
+			<div class="form__tabs__auth form__tabs-tab">
+				Log In
+			</div>
+			<div class="form__tabs__reg form__tabs-tab">
+				Sign Up
+			</div>
+	    </div>
+	    <form class="form__auth">
+		    <input type="email" name="login" placeholder="Email*" required="required" />
+		    <input type="password" name="password" placeholder="Password*" required="required" />
+		    <button type="submit" name ="submit" class="btn btn-primary btn-block btn-large">GET STARTED</button>
+		</form>
+		<form class="form__reg">
+		    <input type="text" name="login" placeholder="First name*" required="required" />
+		    <input type="text" name="login" placeholder="Last name*" required="required" />
+		    <input type="email" name="password" placeholder="Email*" required="required" />
+		    <input type="password" name="password" placeholder="Password*" required="required" />
+		    <button type="submit" name ="submit" class="btn btn-primary btn-block btn-large">SIGN UP</button>
 		</form>
 	</div>
 </body>
-
+<script src='js/jquery.js'></script>
+<script type="text/javascript" src="js/auth_form.js"></script>
 </html>
