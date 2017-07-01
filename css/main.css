@@ -55,6 +55,41 @@ main {
 	margin-left: 20px;
 }
 
+.profile-files {
+	max-width: auto;
+	height: 100px;
+	width: 280px;
+	min-width: 220px;
+	z-index: 105;
+}
+
+.profile-files-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.profile-files-header-scroll-arrow {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 2px solid black;
+	padding: 2px;
+}
+
+.profile-files-gallery {
+	display: inline-block;
+	flex-direction: row;
+	z-index: 104;
+	width: 1000px;}
+
+.profile-files-gallery-image {
+	margin: 5px;
+	z-index: 103;
+	position: relative;
+}
+
 .chat {
 	width: 50%;
 	min-width: 200px;
@@ -64,6 +99,7 @@ main {
 	flex-direction: column;
 	font-family: 'Roboto', sans-serif;
 	overflow: hidden;
+	z-index: 110;
 }
 
 .chat-header {
@@ -157,6 +193,7 @@ main {
 	background-color: #263238;
 	border-radius: 0 10px 10px 0;
 	font-family: 'Roboto', sans-serif;
+	z-index: 115;
 }
 
 .contacts-user {
