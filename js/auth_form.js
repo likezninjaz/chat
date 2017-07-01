@@ -8,7 +8,7 @@ $(document).ready(function() {
 		$(this).css({
 			"background-color":"#4caf50",
 			"color":"white",
-			"border-radius":"5px 5px 0 0"
+			"border-radius":"0 5px 0 0"
 		});
 
 		$tabAuth.css({
@@ -24,7 +24,7 @@ $(document).ready(function() {
 		$(this).css({
 			"background-color":"#4caf50",
 			"color":"white",
-			"border-radius":"5px 5px 0 0"
+			"border-radius":"5px 0 0 0"
 		});
 
 		$tabReg.css({

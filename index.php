@@ -61,7 +61,7 @@
         <form class="chat-form" action="index.html" method="post">
         <input type="textarea" placeholder="Type something to send..." class="chat-conversation-input-field" id="message"/>
         <!-- <img src="images/send.png" class="chat-conversation-input-send" /> -->
-        <button type="submit" name="button" class="chat-conversation-input-send">Send</button>
+        <button type="submit" name="button" class="chat-conversation-input-send"></button>
       </form>
      
 
@@ -79,27 +79,24 @@
         <img src="images/edit.png" class="contacts-user-edit" />
       </div>
       <ul class="contacts-list">
+        <div class="contacts-list-tabs">
+          <div class="contacts-list-tabs-tab contacts-list-tabs-tab-recent tab-active">Recent</div>
+          <div class="contacts-list-tabs-tab contacts-list-tabs-tab-all tab-inactive">Contacts</div>
+        </div>
         <li class="contacts-list-profile">
           <img src="images/profile_photo.jpg" class="contacts-list-profile-photo" />
           <div class="contacts-list-profile-info">
             <span class="contacts-list-profile-info-name">Chris Marina</span>
-            <span class="contacts-list-profile-info-lastmessage">Last message</span>
+            <span class="contacts-list-profile-info-lastmessage">Hello! How are y...</span>
           </div>
         </li>
         <li class="contacts-list-profile">
           <img src="images/profile_photo.jpg" class="contacts-list-profile-photo" />
           <div class="contacts-list-profile-info">
-            <span class="contacts-list-profile-info-name">Chris Marina</span>
+            <span class="contacts-list-profile-info-name">Richard Jenkins</span>
             <span class="contacts-list-profile-info-lastmessage">Last message</span>
           </div>
           <span class="contacts-list-profile-unread">2</span>
-        </li>
-        <li class="contacts-list-profile">
-          <img src="images/profile_photo.jpg" class="contacts-list-profile-photo" />
-          <div class="contacts-list-profile-info">
-            <span class="contacts-list-profile-info-name">Chris Marina</span>
-            <span class="contacts-list-profile-info-lastmessage">Last message</span>
-          </div>
         </li>
       </ul>
     </section>
@@ -109,7 +106,7 @@
 <script src='js/jquery.js'></script>
 <script src='js/jquery.cookie.js'></script>
 <script src='js/main2.js'></script>
-<!-- <script src='js/edit_profile.js'></script> -->
-<!-- <script src='js/chat_conversation.js'></script> -->
+<script src='js/edit_profile.js'></script>
+<script src='js/chat_conversation.js'></script>
+<script src='js/contacts.js'></script>
 </html>
-

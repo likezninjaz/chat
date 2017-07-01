@@ -57,7 +57,7 @@ h1 {
 .form__tabs__auth {
 	background-color: #4caf50;
 	color: white;
-	border-radius: 5px 5px 0 0;
+	border-radius: 5px 0 0 0;
 }
 
 form {
@@ -70,6 +70,10 @@ input {
 	border: none;
 	height: 30px;
 	border-bottom: 1px solid #90a4ae;
+}
+
+*:focus {
+    outline: none;
 }
 
 button {

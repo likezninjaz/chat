@@ -142,6 +142,15 @@ main {
 	width: 75%;
 }
 
+.chat-conversation-input-send {
+	border: none;
+	background-image: url('../images/send.png');
+	background-size: 30px 30px;
+	width: 30px;
+	height: 30px;
+	margin: auto 0 auto 10px;
+}
+
 .contacts {
 	width: 25%;
 	min-width: 300px;
@@ -151,7 +160,6 @@ main {
 }
 
 .contacts-user {
-	border-bottom: 1px solid #90a4ae;
 	display: flex;
 }
 
@@ -204,6 +212,30 @@ main {
 .contacts-list {
 	padding: 0;
 	margin: 0;
+}
+
+.contacts-list-tabs {
+	height: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.contacts-list-tabs-tab {
+	width: 140px;
+	display: inherit;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.tab-active {
+	color: white;
+	border-bottom: 2px solid #546e7a;
+}
+
+.tab-inactive {
+	color: #546e7a;
+	border: none;
 }
 
 .contacts-list-profile {

@@ -7,7 +7,7 @@ $(document).ready(function() {
 		userPhoto='images/profile_photo2.jpg';
 
 
-	inputClear();
+	/*inputClear();
 
 	function chatScrollBottom(length) {
 		chatWindow.scrollTop(length++);
@@ -20,15 +20,6 @@ $(document).ready(function() {
             '</li>');
 
 		chatWindow.scrollTop(10000); //
-
-
-
-	/*	var message = {
-            text: messageInputField.val(),
-            sender: $.cookie(userName),
-            type: 'message'
-        }
-    	conn.send(JSON.stringify(message));*/
 	}
 
 	function inputClear() {
@@ -42,18 +33,18 @@ $(document).ready(function() {
 	    		inputClear();
 	    	}
 		}
-	});
+	});*/
 
 	inputButton.hover(function() {
 		$(this).css({cursor:'pointer'});
 	});
 
-	inputButton.click(function() {
+/*	inputButton.click(function() {
 		if (inputField.val() != '') {
 	    		messageOut(inputField.val());
 	    		inputClear();
 	    	}
-	});
+	}); */
 
 	inputStiker.hover(function() {
 		$(this).css({cursor:'pointer'});
