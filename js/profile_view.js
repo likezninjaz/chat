@@ -14,10 +14,10 @@ $(document).ready(function() {
 	});
 
 	$recentFilesScrollLeft.click(function() {
-		$recentFilesImage.animate({left: '-=50px'}, 800);
+		$recentFilesGallery.scrollLeft($recentFilesGallery.scrollLeft()-20);
 	});
 
 	$recentFilesScrollRight.click(function() {
-		$recentFilesImage.animate({left: '+=50px'}, 800);
+		$recentFilesGallery.scrollLeft($recentFilesGallery.scrollLeft()+20);
 	});
 });
